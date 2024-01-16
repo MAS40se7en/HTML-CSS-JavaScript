@@ -1,0 +1,152 @@
+<DOCTYPE! html>
+<HTML>
+    <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
+    
+<style>
+body {
+ font-family: 'Advent Pro';font-size: 22px;
+}
+</style>
+    <head>
+        <link rel="stylesheet" href="porCSS.css">
+    <div class="upper">
+        <ul class="opt">
+            <li><a href="index_ManirSaker_A2SKKB.html">Home</a></li>
+            <li><a href="AboutPage.html">About Me</a></li>
+        </ul>
+    </div>
+    </head>
+
+    
+
+
+
+    <body>
+        <div class="main">
+            <div class="mcontent">
+                <h1>From Pencils and Portraits to Painting and Designing to Digital Art</h1>
+                <img src="signature.png" alt="sig">
+
+            </div>
+        </div>
+
+
+
+
+
+
+        <!--Paintings Part-->
+
+        <div class="info1">
+            <h1>PAINTINGS</h1>
+            <p>Painting has played a big part in the last couple of years and is still doing so. From Ideas and thoughts into Reality, with passion and respect to the time it takes to implement ideas on a Canvaas that was blank and is now a story.</p>
+            <div class="paintings">
+                <div class="painting">
+                <h2>The Feeling</h2>
+                <p>The Painting is expressing the first someone feels love to it's fullest extent with the right one and with no boundaries</p>
+                <img src="117357474_794107354703501_8751065399765631172_n.jpg" alt="feel" class="img1">
+                </div>
+                <div class="painting">
+                <h2>Surrounded</h2>
+                <p>The painting is expressing the sense of being surrounded and unable to express or say someting in a kind of an unwelcoming atmosphere</p>
+                <img src="128428301_409136083464694_1499994519024071418_n.jpg" alt="surr" class="img2">
+                </div>
+            </div>
+            </div>
+
+            <!--Pencils Part-->
+
+            <div class="info2">
+            <h1>PENCILS</h1>
+            <p>Pencil Drawing is one of my favourite ways of expressing inspiration. Pencil is also helpful when trying to get the most detail in an image to make the drawing standout and the highlights to be more satisfying and present.</p>
+            <div class="pencils">
+                <div class="pencil">
+                    <h2>Sabah Fakhri</h2>
+                    <img src="258503584_3094069154198876_8821221891747055154_n.jpg" alt="feel" class="img1">
+                    </div>
+                    <div class="pencil">
+                    <h2>G-Eazy</h2>
+                    <img src="245136204_458945725436538_3427815843577157196_n.jpg" alt="G-Eazy" class="img2">
+                    </div>
+                    </div>
+                    <div class="pencils1">
+                    <div class="pencil">
+                    <h2>Bu Kolthoum</h2>
+                    <img src="250617534_475893690323838_7269064678162545609_n.jpg" alt="Bu">
+                    </div>
+                    <div class="pencil">
+                    <h2>John Cooper</h2>
+                    <img src="john.jpg" alt="john">
+                </div>
+                
+            </div>
+            <div class="pencils2">
+                <div class="pencil">
+                <h2>COD Ghosts</h2>
+                <img src="92365144_1178625969196207_1278512520193005632_n.jpg" alt="Ghosts">
+                </div>
+            </div>
+            </div>
+
+
+            <!--Digital Work Part-->
+
+            <div class="info3">
+                <div class="digitals1">
+                    <h1>DIGITAL WORK</h1>
+                    <p class="DW">Digital Drawing is a bit of a new concept for me. Easy to use and more fun with a lot of styles and colors.</p>
+                    <div class="digital">
+                        <h2>Illustation 1</h2>
+                    <img src="illustration15.jpg" alt="1" class="img1">
+                    </div>
+                    <div class="digital">
+                    <h2>Illustraion 2</h2>
+                    <img src="Illustration3.jpg" alt="1" class="img2">
+                    </div>
+                    <div class="digital">
+                    <h2>Ilustration 3</h2>
+                    <img src="illustration.jpg" alt="1" class="img3">
+                    </div>
+                    </div>
+                    </div>
+                </div>
+                
+            </div>
+        
+    </body>
+
+    <!--Contact-->
+    <footer>
+        <div class="contact">
+            <h2>GET IN TOUCH!</h2>
+            <form onsubmit="sendEmail(); reset(); return false;">
+                <input type="text" id="name" placeholder="MARK" Required>
+                <input type="email" id="email" placeholder="markDuck@blabla.com" required>
+                <input type="text" id="phone" placeholder="20 123 1234" required>
+                <textarea id="message" rows="4" placeholder="How Can I Help?"></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <script src="https://smtpjs.com/v3/smtp.js">
+            </script>
+            <script>
+                function sendEmail() {
+                    Email.send({
+                        Host : "smtp.gmail.com",
+                        Username : "manir.saker@gmail.com",
+                        Password : "password",
+                        To: 'manir.saker@gmail',
+                        From : document.getElementById("email").value,
+                        Subject : "New Content Form Enquiry",
+                        Body : "Name: " + document.getElementById("name").value
+                         + "<br> Email: " + document.getElementById("email").value
+                         + "<br> Phone Number: " + document.getElementById("phone").value
+                         + "</br> Message: " + document.getElementById("message").value
+                    }).then(
+                        message => alert("Message sent: " + document.getElementById("message").value)
+                    );
+                }
+            </script>
+            <h3 class="phone">Phone Number: +36205202307</h3>
+            <a href="http://www.instagram.com/i.d.k.m.47">Instagram: @i.d.k.m.47</a>
+        </div>
+    </footer>

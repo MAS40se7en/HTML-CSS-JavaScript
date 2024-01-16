@@ -1,0 +1,62 @@
+<DOCTYPE! html>
+<HTML>
+    <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
+<style>
+body {
+ font-family: 'Advent Pro';font-size: 22px;
+}
+</style>
+    <head>
+        <link rel="stylesheet" href="porCSS.css">
+    <div class="upper">
+        <ul class="opt">
+            <li><a href="index_ManirSaker_A2SKKB.html">Home</a></li>
+            <li><a href="AboutPage.html">About Me</a></li>
+        </ul>
+    </div>
+    </head>
+    <body>
+        <div class="mainC">
+            <h1>ABOUT ME</h1>
+            <div class="text">
+                <img src="314064943_1788081658235999_6029531234614138822_n.jpg" alt="">
+                <p>
+                    I'm a Syrian Artist, a forcefully retired Gamer and an upcomming programming master. Lived my lif in Syria and in the UAE and now studying in Hungary. The journey to here was not expected but it was interesting. I spent a lot of time after Highschool doing almost nohting but drawing and painting. During that time, the drawings and the paintings really helped a lot and I fell in love with what I can create using a simple paper and pencil or a canvas and some colors. 
+                    I grew up in a household full of art admirers and poeple who introduced me to many things and art was and still one of the most important things in my life. 
+                    Life is gonna be better as long as you live it.
+                </p>
+            </div>
+        </div>
+    </body>
+    <!--Contact-->
+    <footer>
+        <div class="contact">
+            <h2>GET IN TOUCH!</h2>
+            <form onsubmit="senEmail(); reset(); return false;">
+                <input type="text" id="name" placeholder="MARK" Required>
+                <input type="email" id="email" placeholder="markDuck@blabla.com" required>
+                <input type="text" id="phone" placeholder="20 123 1234" required>
+                <textarea id="message" rows="4" placeholder="How Can I Help?"></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <script src="https://smtpjs.com/v3/smtp.js">
+            </script>
+            <script>
+                function senEmail() {
+                    Email.send({
+                        Host : "smtp.gmail.com",
+                        Username : "manir.saker@gmail.com",
+                        Password : "password",
+                        To: 'manir.saker@gmail',
+                        From : document.getElementById("email").value,
+                        Subject : "New Content Form Enquiry",
+                        Body : document.getElementById("message").value
+                    }).then(
+                        message => alert("Message sent: " + document.getElementById("message").value)
+                    );
+                }
+            </script>
+            <h3 class="phone">Phone Number: +36205202307</h3>
+            <a href="http://www.instagram.com/i.d.k.m.47">Instagram: @i.d.k.m.47</a>
+        </div>
+    </footer>
